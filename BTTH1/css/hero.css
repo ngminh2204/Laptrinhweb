@@ -1,0 +1,39 @@
+.hero {
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);    
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#des{
+    color: white; 
+    font-size: 1.25rem;
+    font-weight: lighter;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    font-size: 14px;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 30px;    
+    background-color: white;
+    color: blue;
+    margin: 20px;
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.20);
+}
+
+.cta-button:hover {
+    background: lightcoral;
+    color: blue;
+    transition: background 0.3s ease;
+}
+
+.menu-toggle { display: none; }
+.menu-toggle:checked ~ nav { display: flex; }
