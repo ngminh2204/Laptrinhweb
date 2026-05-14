@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="skill.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Nguyen Minh</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1 style="font-size: 3.5rem;"><span style="color: white;">Hi, I'm </span><span style="color: rgb(228, 200, 15);">Minh</span></h1>
+        <p id="des">Full-Stack Developer | UI Designer | Problem Solver</p>
+        <a href="#portfolio" class="cta-button">View My Work</a>
+    </section>
+    
+    <section id="about" class="about-section">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-image">
+                <img id="profileimg" src="data:image/jpeg;base64,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" alt="Profile Photo">
+            </div>
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p class="lead">I'm a passionate developer with 3+ years of experience building web applications.</p>
+                <p style="font-size: 15px; font-weight: 100;">Specialized in Frontend development with React and Vue. Also experienced in Backend with Node.js and Python. I believe in clean code, user-centered design, and continuous learning.</p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+    <div class="container" style="background-color: #f5f5f5;">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <div class = skill>
+                <span class="skill-name">HTML5</span>
+                <span style="font-weight: bold; background: -webkit-linear-gradient(90deg, #6366f1 0%, #8b5cf6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">95%</span>
+                </div>        
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 95%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class = skill>
+                <span class="skill-name">JavaScript</span>
+                <span style="font-weight: bold; background: -webkit-linear-gradient(90deg, #6366f1 0%, #8b5cf6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">85%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class = skill>
+                <span class="skill-name">CSS3</span>
+                <span style="font-weight: bold; background: -webkit-linear-gradient(90deg, #6366f1 0%, #8b5cf6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">90%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 90%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class = skill>
+                <span class="skill-name">React</span>
+                <span style="font-weight: bold; background: -webkit-linear-gradient(90deg, #6366f1 0%, #8b5cf6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">80%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 80%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio-section">
+    <div class="container">
+        <h2>My Portfolio</h2>
+        <div class="portfolio-filters">
+            <button class="filter-btn active">All</button>
+            <button type="button" class="filter-btn">Web</button>
+            <button class="filter-btn">Mobile</button>
+            <button class="filter-btn">Design</button>
+        </div>
+        <div class="portfolio-grid">
+            <div class="portfolio-item" data-category="web">
+                <a href="#lightbox-1">
+                    <img src="https://placehold.co/400x300/png?text=Web+Application+1" alt="Project 1">
+                    <div class="portfolio-overlay">
+                        <h3>Project 1</h3>
+                        <p>Web Application</p>
+                    </div>
+                </a>
+            </div>
+            <div class="portfolio-item" data-category="web">
+                <a href="#lightbox-2">
+                    <img src="https://placehold.co/400x300/png?text=Web+Application+2" alt="Project 2">
+                    <div class="portfolio-overlay">
+                        <h3>Project 2</h3>
+                        <p>Web Application</p>
+                    </div>
+                </a>
+            </div>
+            <div class="portfolio-item" data-category="web">
+                <a href="#lightbox-3">
+                    <img src="https://placehold.co/400x300/png?text=Web+Application+3" alt="Project 3">
+                    <div class="portfolio-overlay">
+                        <h3>Project 3</h3>
+                        <p>Web Application</p>
+                    </div>
+                </a>
+            </div>
+            <div class="portfolio-item" data-category="mobile">
+                <a href="#lightbox-4">
+                    <img src="https://placehold.co/400x300/png?text=Mobile+App+1" alt="Project 4">
+                    <div class="portfolio-overlay">
+                        <h3>Project 4</h3>
+                        <p>Mobile App</p>
+                    </div>
+                </a>
+            </div>
+            <div class="portfolio-item" data-category="mobile">
+                <a href="#lightbox-5">
+                    <img src="https://placehold.co/400x300/png?text=Mobile+App+2" alt="Project 5">
+                    <div class="portfolio-overlay">
+                        <h3>Project 5</h3>
+                        <p>Mobile App</p>
+                    </div>
+                </a>
+            </div>
+            <div class="portfolio-item" data-category="design">
+                <a href="#lightbox-6">
+                    <img src="https://placehold.co/400x300/png?text=UI%2FUX+Design" alt="Project 6">
+                    <div class="portfolio-overlay">
+                        <h3>Project 6</h3>
+                        <p>UI/UX Design</p>
+                    </div>
+                </a>
+            </div>
+            <div id="lightbox-1" class="lightbox">
+                <img src="https://placehold.co/400x300/png?text=Web+Application+1" alt="Project 1">
+                <a href="#portfolio" class="lightbox-close">&times;</a>
+            </div>
+            <div id="lightbox-2" class="lightbox">
+                <img src="https://placehold.co/400x300/png?text=Web+Application+2" alt="Project 2">
+                <a href="#portfolio" class="lightbox-close">&times;</a>
+            </div>
+            <div id="lightbox-3" class="lightbox">
+                <img src="https://placehold.co/400x300/png?text=Web+Application+3" alt="Project 3">
+                <a href="#portfolio" class="lightbox-close">&times;</a>
+            </div>
+            <div id="lightbox-4" class="lightbox">
+                <img src="https://placehold.co/400x300/png?text=Mobile+App+1" alt="Project 4">
+                <a href="#portfolio" class="lightbox-close">&times;</a>
+            </div>
+            <div id="lightbox-5" class="lightbox">
+                <img src="https://placehold.co/400x300/png?text=Mobile+App+2" alt="Project 5">
+                <a href="#portfolio" class="lightbox-close">&times;</a>
+            </div>
+            <div id="lightbox-6" class="lightbox">
+                <img src="https://placehold.co/400x300/png?text=UI%2FUX+Design" alt="Project 6">
+                <a href="#portfolio" class="lightbox-close">&times;</a>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+    <div class="container" style="margin-top: 30px;">
+        <h2>Get In Touch</h2>
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>Feel free to reach out. I'm always open to discussing new projects.</p>
+                <div class="info-item">
+                    <span class="icon">📧</span>
+                    <span style="font-size: 20px;">your.email@example.com</span>
+                </div>
+                <div class="info-item">
+                    <span class="icon">📍</span>
+                    <span style="font-size: 20px;">Hanoi, Vietnam</span>
+                </div>
+            </div>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+    </section>
+</body>
+</html>
