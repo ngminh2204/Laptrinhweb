@@ -92,26 +92,6 @@ Không nên dùng table cho việc làm layout là vì:
 
   Lỗi 11: Dòng 45 — Thiếu thẻ đóng `</p>` – Thêm thẻ đóng `</p>`
   
-## Câu B4:
-Trong trang web shoppe.vn:
-
-### 1. 3 thẻ semantic HTML5 mà trang đó sử dụng:
-- Thẻ `<header>`: Phần đầu của trang web
-<img width="1907" height="916" alt="image" src="https://github.com/user-attachments/assets/e040caa9-be26-4552-b1bd-13ba63042aac" />
-
-- thẻ `<nav>`: Khối liên kết điều hướng
-<img width="1905" height="911" alt="image" src="https://github.com/user-attachments/assets/d37ebc87-a5b2-4759-bd30-bc4949cf0d32" />
-
-- Thẻ `<footer>` : Phần cuối trang web
-<img width="1918" height="972" alt="image" src="https://github.com/user-attachments/assets/25575129-f4c3-40c8-8f9a-aacb0d09b796" />
-
-### 2. thẻ table
-
-### 3. thẻ form 
-<img width="1908" height="957" alt="image" src="https://github.com/user-attachments/assets/be3cd31d-264c-475c-8e55-fa9970f8c290" />
-- Không khai báo trực tiếp method/action trong HTML (xử lý qua JS), mặc định trình duyệt hiểu là method="get" và action là trang hiện tại.
-- Input: text
-
 ## Câu C1
 ```html
 <!-- Header + Navigation -->
