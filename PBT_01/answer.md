@@ -91,7 +91,20 @@ Không nên dùng table cho việc làm layout là vì:
   Lỗi 10: Dòng 40 — Dùng `<main>` lần 2 cho sidebar — Một trang chỉ được có 1 thẻ `<main>`, sidebar phải dùng `<aside>` — Sửa thành `<aside>` nằm trong `<main>`
 
   Lỗi 11: Dòng 45 — Thiếu thẻ đóng `</p>` – Thêm thẻ đóng `</p>`
-  
+
+## Câu B4:
+Trong trang web shoppe.vn:
+
+### 1. 3 thẻ semantic HTML5 mà trang đó sử dụng:
+- Thẻ `<header>`: Phần đầu của trang web
+- thẻ `<nav>`: Khối liên kết điều hướng
+- Thẻ `<footer>` : Phần cuối trang web
+### 2. thẻ table
+
+### 3. thẻ form 
+- Không khai báo trực tiếp method/action trong HTML (xử lý qua JS), mặc định trình duyệt hiểu là method="get" và action là trang hiện tại.
+- Input: text
+
 ## Câu C1
 ```html
 <!-- Header + Navigation -->
