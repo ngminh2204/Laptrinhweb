@@ -10,7 +10,6 @@
 8. type="color" → Ô hiển thị một hộp màu, khi nhấn vào sẽ mở bảng chọn màu của hệ điều hành, tự động trả về mã màu HEX hợp lệ → Dùng trong bộ lọc (Filter) sản phẩm.
 9. type="range" → Thanh trượt (Slider) để chọn giá trị trong một khoảng, tự động giới hạn giá trị tối thiểu và tối đa → Dùng cho bộ lọc khoảng giá (Price range filter).
 10. type="file" → Nút bấm kích hoạt cửa sổ chọn file từ thiết bị, có thể giới hạn định dạng → Dùng khi khách hàng tải ảnh/video sản phẩm 
-- Tài liệu: tuan_1_html5/07_forms_interactive.md -> Các Input Types HTML5
 
 ## Câu A2
 - Trường hợp 1: Không submit được → Vì required bắt buộc nhập, nhưng đang để trống
@@ -27,8 +26,6 @@
 
 - Trường hợp 5: Không submit được → Vì độ dài < 8 ký tự
 <img width="494" height="285" alt="image" src="https://github.com/user-attachments/assets/db359c93-6596-4c8c-9a37-86c3a190386d" />
-
-- Tài liệu: tuan_1_html5/07_forms_interactive.md -> HTML5 Validation Attributes
 
 ## Câu A3
 1. Tại sao `<label for="email">` quan trọng cho người dùng screen reader?
@@ -49,8 +46,6 @@ Tại sao KHÔNG nên dùng aria-label khi đã có `<label>`?
 - Gây trùng thông tin
 - Screen reader có thể đọc 2 lần
 - Làm rối trải nghiệm
-
-- Tài liệu: tuan_1_html5/07_forms_interactive.md -> Accessibility — Form cho mọi người
 
 ## Câu A4
 1. Thuộc tính loading="lazy" giúp ảnh chỉ tải khi gần xuất hiện trên màn hình, từ đó tăng tốc độ tải trang và tiết kiệm băng thông. Tuy nhiên, không nên dùng cho các ảnh quan trọng ở đầu trang vì cần hiển thị ngay.
