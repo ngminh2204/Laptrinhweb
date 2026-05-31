@@ -124,16 +124,22 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    width: 300px;
 }
 
 .card-img-placeholder {
     background-color: #e5e7eb;
-    height: 150px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #6b7280;
     font-size: 14px;
+}
+
+.card-img-placeholder img{
+    display: flex;
+    justify-content: center;
 }
 
 .card-body {
