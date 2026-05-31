@@ -171,3 +171,27 @@ Tính theo hệ 3 cột (ID, Class, Tag):
 
 # Phần C: Debug & Suy luận
 ## Câu C1
+1. Chiều rộng thực tế (content-box)
+
+- Sidebar: 300 + 20×2 + 1×2 = 342px
+- Content: 660 + 30×2 + 1×2 = 722px
+2. Layout bị vỡ vì tổng chiều rộng Sidebar và Content là 1064px. Khối Container chỉ rộng 960px, không chứa đủ 2 khối kia cùng 1 hàng nên khối Content bị đẩy xuống dưới
+
+3. Hai cách sửa
+- Cách 1: Dùng border-box cho cả hai 
+- Cách 2: Tự trừ padding + border khỏi width (không dùng border-box)
+
+## Câu C2
+1. "Sản phẩm A" (h2) có font-size: 20px và color: green; 
+vì font-size áp dụng từ rule `.card .title { font-size: 20px; }`, 
+còn color là green vì element có class `.highlight`, và rule `.highlight { color: green !important; }` có `!important` nên ưu tiên cao nhất.
+
+2. "Mô tả sản phẩm" (p trong card featured) có color: blue; 
+vì rule `.card p { color: inherit; }` dùng `inherit` nên kế thừa màu từ phần tử cha `.card`, mà `.card` có `color: blue`.
+
+3. "Sản phẩm B" (h2) có font-size: 20px và color: blue; 
+vì font-size áp dụng từ `.card .title { font-size: 20px; }`, 
+còn color kế thừa từ phần tử cha `.card` vì thẻ `h2` không có rule màu riêng.
+
+4. "Mô tả sản phẩm B" (p.highlight) có color: green; 
+vì có class `.highlight`, và rule `.highlight { color: green !important; }` có `!important` nên ghi đè màu kế thừa từ `.card`.
